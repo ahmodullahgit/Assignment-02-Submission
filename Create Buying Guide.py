@@ -39,7 +39,7 @@ keyword_list = []
 for product in SelectedProduct:
     keyword = product.strip('\n')
     keyword_list.append(keyword)
-keyword = keyword_list[0]  # You can change the index number (among 0,1 & 3) to work with different product name.
+keyword = keyword_list[2]  # You can change the index number (among 0,1 & 3) to work with different product name.
 SelectedProduct.close()
 
 intro = openai_answer(f'Write an intro about {keyword}')
